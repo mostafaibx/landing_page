@@ -21,11 +21,11 @@ const ConfigCard = ({ selectedCity }) => {
         className={move ? 'card-side move-card-side' : 'card-side'}
         style={{ padding: '4rem ' }}
       >
-        <div className='card-side-content'>
-          <div className='header'>
+        <div className='card-side-content-config'>
+          <div className='header-config'>
             <p>Your Cities</p>
           </div>
-          <div>
+          <div className='list'>
             <ul>
               <li>Portsaid, Egypt</li>
               <li>Annaba, Algeria</li>

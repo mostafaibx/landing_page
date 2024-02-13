@@ -38,7 +38,7 @@ const Card = ({ selectedCity }) => {
         className={move ? 'card-side move-card-side' : 'card-side'}
         style={{ padding: '4rem ' }}
       >
-        <div className='card-side-content'>
+        <div className='card-side-content-main'>
           <div className={move ? 'circle move-circle' : 'circle'}>
             <img
               src={
