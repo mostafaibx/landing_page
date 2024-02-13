@@ -13,7 +13,7 @@ import ConfigCard from './components/ConfigCard/ConfigCard';
 
 function App() {
   const [selectedCity, setSelectedCity] = useState(1);
-  const [selectedOption, setSelectedOption] = useState(1);
+  const [selectedOption, setSelectedOption] = useState(0);
 
   const selectCityHandler = (data) => {
     setSelectedCity(data);
