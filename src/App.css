@@ -26,7 +26,6 @@
 
 .floating-up {
   position: absolute;
-
   top: 0rem;
   left: 12rem;
   z-index: 10;
@@ -34,7 +33,7 @@
 }
 
 .floating-up img {
-  width: 20rem;
+  width: 10rem;
 }
 .sun {
   width: 10rem;

@@ -3,12 +3,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 75rem;
+  width: 50rem;
   padding: 2rem 0;
 }
 
 .icon {
-  width: 3rem;
+  width: 2.5rem;
   padding: 0 0.5rem;
   display: flex;
   align-content: center;
@@ -17,6 +17,6 @@
 }
 
 .selected {
-  width: 4rem;
+  width: 3rem;
   color: var(--primary-color);
 }

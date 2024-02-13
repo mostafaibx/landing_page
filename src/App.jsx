@@ -10,6 +10,7 @@ import cloud from './assets/clouds.png';
 import winter from './assets/indoors.png';
 import rain from './assets/rain.svg';
 import ConfigCard from './components/ConfigCard/ConfigCard';
+import InfoCard from './components/infoCard/InfoCard';
 
 function App() {
   const [selectedCity, setSelectedCity] = useState(1);
@@ -27,7 +28,7 @@ function App() {
   return (
     <div>
       <div className='container'>
-        {/*         <div className='floating-up'>
+        <div className='floating-up'>
           {selectedOption === 0 && (
             <img
               className={icon === 'sunny' ? 'sun' : ''}
@@ -35,7 +36,7 @@ function App() {
             ></img>
           )}
         </div>
-        {selectedOption === 0 && (
+        {/*         {selectedOption === 0 && (
           <div className='floating-down'>
             <img src={icon === 'sunny' ? beach : winter}></img>
           </div>
@@ -51,6 +52,7 @@ function App() {
             ''
           )}
           {selectedOption === 1 ? <ConfigCard /> : ''}
+          {selectedOption === 3 ? <InfoCard /> : ''}
         </div>
       </div>
     </div>

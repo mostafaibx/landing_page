@@ -87,7 +87,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
-  width: 100%;
+  width: 110%;
 }
 
 .charts span {
@@ -115,7 +115,7 @@
   right: -0.08rem;
   font-weight: 400;
   color: var(--secondary-color);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .activities {
@@ -141,29 +141,35 @@
 @keyframes move-col1 {
   0% {
     transform: translateY(0);
+    opacity: 0;
   }
   50% {
     transform: translateY(100vh);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes move-col2 {
   0% {
     transform: translateY(0);
+    opacity: 0;
   }
   50% {
     transform: translateY(-100vh);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes move-circle {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   50% {
     opacity: 0;

@@ -1,9 +1,14 @@
 /* eslint-disable react/prop-types */
 import './ConfigCard.css';
+import {
+  MapContainer,
+  TileLayer,
+  useMap,
+} from 'https://cdn.esm.sh/react-leaflet';
 
 import { useEffect, useState } from 'react';
 
-const ConfigCard = ({ selectedCity }) => {
+const ConfigCard = () => {
   const [move, setMove] = useState(false);
 
   useEffect(() => {
@@ -11,9 +16,7 @@ const ConfigCard = ({ selectedCity }) => {
     setTimeout(() => {
       setMove(false);
     }, 2000);
-  }, [selectedCity]);
-
-  console.log(move);
+  }, []);
 
   return (
     <>
@@ -21,7 +24,13 @@ const ConfigCard = ({ selectedCity }) => {
         className={move ? 'card-side move-card-side' : 'card-side'}
         style={{ padding: '4rem ' }}
       >
-        <div className='card-side-content-config'>
+        <div
+          className={
+            move
+              ? 'card-side-content-config move-card-content-config'
+              : 'card-side-content-config'
+          }
+        >
           <div className='header-config'>
             <p>Your Cities</p>
           </div>
@@ -35,7 +44,29 @@ const ConfigCard = ({ selectedCity }) => {
         </div>
       </div>
 
-      <div className='card'></div>
+      <div className='card'>
+        <div
+          className={
+            move
+              ? 'card-content-config  move-card-content-config '
+              : 'card-content-config '
+          }
+        >
+          <div className='search'>
+            <input
+              type='text'
+              placeholder='search...'
+            />
+            <button> + </button>
+          </div>
+          <div className='map'>
+            <img
+              src='https://www.shutterstock.com/image-vector/map-city-600nw-671959120.jpg'
+              alt='map_placeholder'
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 };
