@@ -1,0 +1,46 @@
+p {
+  color: var(--darker-color);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.card,
+.card-side {
+  width: 60%;
+  min-width: 30rem;
+  height: 30rem;
+  border-radius: 4rem;
+  padding: 4rem 8rem;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.card-side {
+  padding: 4rem 0;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.move-card-side {
+  animation: move-card-slide 2s ease-in-out infinite;
+}
+
+.card {
+  position: absolute;
+  background-color: rgb(219, 238, 254);
+  top: 0;
+  left: 20rem;
+  padding: 4rem 8rem;
+}
+
+@keyframes move-card-slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

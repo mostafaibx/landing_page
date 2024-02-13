@@ -1,0 +1,22 @@
+.switcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 75rem;
+  padding: 2rem 0;
+}
+
+.icon {
+  width: 3rem;
+  padding: 0 0.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: var(--darker-color);
+}
+
+.selected {
+  width: 4rem;
+  color: var(--primary-color);
+}

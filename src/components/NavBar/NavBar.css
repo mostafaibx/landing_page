@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 13rem;
+  height: 30rem;
+  overflow-y: scroll;
+  margin: 0 3rem;
+}
+
+header div {
+  width: 50%;
+  height: 50%;
+  padding: 1.25rem 0.75rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darker-color);
+}
+.checked {
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+}
+
+header::-webkit-scrollbar {
+  display: none;
+}

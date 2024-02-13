@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #1c8cd1;
+  --secondary-color: rgb(219, 238, 254);
+  --dark-color: #033a5c;
+  --darker-color: #00243a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: 'DM Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  height: 40rem;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.floating-down {
+  position: absolute;
+  bottom: 3rem;
+  right: 0rem;
+  z-index: 10;
+}
+.floating-down img {
+  width: 40rem;
+}
+
+.floating-up {
+  position: absolute;
+
+  top: 0rem;
+  left: 12rem;
+  z-index: 10;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.floating-up img {
+  width: 20rem;
+}
+.sun {
+  width: 10rem;
+  animation: floating-img 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(20rem, 0);
+  }
+  100% {
+    transform: translate(-0px, 0);
+  }
+}
+@keyframes floating-img {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+@media (max-width: 1800px) {
+  .floating-down {
+    display: none;
+  }
+}
