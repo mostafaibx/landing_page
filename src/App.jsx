@@ -27,7 +27,7 @@ function App() {
   return (
     <div>
       <div className='container'>
-        <div className='floating-up'>
+        {/*         <div className='floating-up'>
           {selectedOption === 0 && (
             <img
               className={icon === 'sunny' ? 'sun' : ''}
@@ -39,7 +39,7 @@ function App() {
           <div className='floating-down'>
             <img src={icon === 'sunny' ? beach : winter}></img>
           </div>
-        )}
+        )} */}
         <NavBar onSelectedOption={selectedOptioHandler} />
         <div className='content'>
           {selectedOption === 0 ? (
